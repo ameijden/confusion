@@ -7,6 +7,7 @@ function Menu(props) {
     const renderMenuItem = ({item, index}) => {
 
         return (
+           
             <ListItem
                 key={index}
                 title={item.name}
@@ -14,9 +15,10 @@ function Menu(props) {
                 hideChevron={true}
                 onPress={() => props.onPress(item.id)}
                 leftAvatar={{ source: require('./images/uthappizza.png')}}
-            />
+           />
+          
         );
-    }
+    };
 
     return (
             <FlatList 
